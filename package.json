@@ -1,26 +1,47 @@
 {
-  "name": "messaging-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pqc-secure-messaging",
+  "version": "1.0.0",
+  "description": "Post-Quantum Cryptography Secure Messaging Application with Kyber1024 and AES-256-GCM",
+  "main": "server.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint"
   },
+  "keywords": [
+    "post-quantum",
+    "cryptography",
+    "kyber",
+    "aes",
+    "secure-messaging",
+    "end-to-end-encryption",
+    "websocket",
+    "real-time-chat"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "next": "16.0.3",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "bcryptjs": "^2.4.3",
+    "cookie": "^0.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^6.0.1",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@types/react": "19.2.7",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
