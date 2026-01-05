@@ -192,6 +192,11 @@ quantum-secure-chat-app/
 
 ---
 
+### 🔑 Key Downloaded
+![Key Download](Screenshots/key-dl.png)
+*Automatic Kyber1024 key pair generation with download prompt*
+
+---
 ### 💬 Chat Interface
 ![Chat Interface](Screenshots/chat.png)
 *Clean, modern chat UI with real-time encryption status & Inline image previews with encrypted transmission**
